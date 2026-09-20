@@ -80,7 +80,7 @@
   gap: 16px;
 }
 
-/* Minimal work-experience section */
+/* Minimal work-experience timeline */
 #work-experience-section {
   display: flex;
   flex-direction: column;
@@ -91,27 +91,35 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  padding: 24px;
+  padding: 24px 24px 24px 8px;
   border: 3px solid #141414;
   border-radius: 4px;
   background: #fafafa;
 }
 
 .work-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 18px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.work-item:first-child {
-  padding-top: 0;
+  padding: 0 0 28px 32px;
+  margin-left: 10px;
+  border-left: 2px solid #141414;
 }
 
 .work-item:last-child {
-  border-bottom: 0;
   padding-bottom: 0;
+}
+
+.work-item::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #141414;
 }
 
 .work-role {
