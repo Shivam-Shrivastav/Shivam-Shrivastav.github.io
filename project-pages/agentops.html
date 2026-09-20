@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../assets/images/shivam.jpg" />
+    <title>AgentOps — Shivam Shrivastava</title>
+    <meta name="description" content="AgentOps observability platform for LLM agents.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <script defer src="../js/script.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">Shivam.</span>
+      </a>
+      <a class="button" href="mailto:shivamshrivastava1021@gmail.com">
+        <span class="button-text">Contact Me</span>
+      </a>
+    </div>
+
+    <div id="main-content">
+      <div id="project-header">
+        <div class="main-title">AgentOps</div>
+        <div class="body-text">A self-hosted observability platform that instruments LLM agents, ingests trace events, and visualizes them in a React dashboard with span trees, cost analytics, and decision-quality evals.</div>
+        <image class="project-header-image" src="../assets/images/agentops-1.png">
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">Project Details</div>
+        <div class="project-details-content"
+          <div class="body-text">AgentOps tracks the full lifecycle of an agent run: trace creation, planner reasoning, LLM calls, tool invocations, errors, token usage, and cost. The system is built as a monorepo with a custom Python SDK, a FastAPI ingestion service, a Redis-backed worker, a PostgreSQL store, and a React/Vite dashboard.</div>
+          <div class="body-text">I added an in-browser playground of lightweight agents (trip planner, researcher, trade signal, diff summarizer, JSON wrangler, share page) plus a chat UI that runs tasks and links each run to its full trace. The hosted version is exposed through a Cloudflare Tunnel for easy demos.</div>
+          <div class="body-text">
+            <strong>Tech:</strong> Python SDK, FastAPI, PostgreSQL, Redis, React, Vite, Docker Compose, Caddy, Cloudflare Tunnel.<br>
+            <strong>Live:</strong> <a href="https://agentops.website" target="_blank">agentops.website</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-gallery">
+        <div class="subheader-text">Gallery</div>
+        <div class="project-gallery-content">
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/agentops-2.png" class="gallery-image">
+            <span class="image-caption">Trace list with model breakdown and failure analytics.</span>
+          </div>
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/agentops-3.png" class="gallery-image">
+            <span class="image-caption">Agent playground and starter tasks.</span>
+          </div>
+          <div class="gallery-image-container">
+            <img src="../assets/images/agentops-4.png" class="gallery-image">
+            <span class="image-caption">Execution timeline and span inspector for a single trace.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://github.com/Shivam-Shrivastav">
+        <image src="../assets/icons/github.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/shivam-shrivastava-/">
+        <image src="../assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" target="_blank" href="https://twitter.com/ShivamsTwt">
+        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:shivamshrivastava1021@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+  </body>
+</html>

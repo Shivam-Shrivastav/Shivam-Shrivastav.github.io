@@ -1,0 +1,47 @@
+/* Minimal tech-stack section that matches the clean Unemployables theme */
+
+#tech-stack-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tech-stack-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border: 3px solid #141414;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.tech-category {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tech-category-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #555;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  padding: 6px 12px;
+  border: 2px solid #141414;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  background: #ffffff;
+  color: #141414;
+}

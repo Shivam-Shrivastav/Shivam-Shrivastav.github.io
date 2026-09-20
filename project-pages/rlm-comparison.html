@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../assets/images/shivam.jpg" />
+    <title>RLM BrowseComp Comparison — Shivam Shrivastava</title>
+    <meta name="description" content="Benchmark of RAG, ReAct+BM25 and RLM on long-document QA.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <script defer src="../js/script.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">Shivam.</span>
+      </a>
+      <a class="button" href="mailto:shivamshrivastava1021@gmail.com">
+        <span class="button-text">Contact Me</span>
+      </a>
+    </div>
+
+    <div id="main-content">
+      <div id="project-header">
+        <div class="main-title">RLM BrowseComp Comparison</div>
+        <div class="body-text">A fair, same-model benchmark of RAG, ReAct+BM25, and Recursive Language Modeling on long-document, multi-hop question answering.</div>
+        <image class="project-header-image" src="../assets/images/rlm-1.png">
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">Project Details</div>
+        <div class="project-details-content">
+          <div class="body-text">I built a controlled benchmark that keeps the model, provider, PDF text, and questions identical across RAG, ReAct+BM25, and RLM. RLM treats the corpus as a REPL variable and lets the model write code (peek, grep, chunk, summarize) and spawn recursive sub-LLMs for multi-hop reasoning.</div>
+          <div class="body-text">Scoring uses SQuAD-style Exact Match plus token F1, while also recording tokens, latency, and LLM calls. On BrowseComp-Plus, a coding-focused, low-thinking model lifted RLM from 0.20 to 0.72 F1 — showing RLM excels where static retrieval fails.</div>
+          <div class="body-text">
+            <strong>Tech:</strong> Python, pdfplumber, rank_bm25, scikit-learn, HuggingFace datasets, OpenAI/Ollama-compatible endpoints.<br>
+            <strong>Repo:</strong> <a href="https://github.com/Shivam-Shrivastav/rlm-browsecomp-comparison" target="_blank">git-agentops</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-gallery">
+        <div class="subheader-text">Gallery</div>
+        <div class="project-gallery-content">
+          <div class="gallery-image-container">
+            <img src="../assets/images/rlm-2.png" class="gallery-image">
+            <span class="image-caption">Benchmark results comparing RAG, ReAct+BM25 and RLM on BrowseComp-Plus.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://github.com/Shivam-Shrivastav">
+        <image src="../assets/icons/github.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/shivam-shrivastava-/">
+        <image src="../assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" target="_blank" href="https://twitter.com/ShivamsTwt">
+        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:shivamshrivastava1021@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+  </body>
+</html>
