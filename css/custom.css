@@ -50,12 +50,13 @@
 .nav-left {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 20px;
 }
 
 .nav-socials {
   display: flex;
-  gap: 18px;
+  align-items: center;
+  gap: 28px;
 }
 
 .nav-socials .icon-link {
