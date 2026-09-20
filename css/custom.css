@@ -45,3 +45,94 @@
   background: #ffffff;
   color: #141414;
 }
+
+/* Navbar layout: title + socials on left, stacked buttons on right */
+.nav-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Minimal work-experience section */
+#work-experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.work-experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  border: 3px solid #141414;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.work-role {
+  font-size: 18px;
+  font-weight: 700;
+  color: #141414;
+}
+
+.work-org {
+  font-size: 14px;
+  font-weight: 700;
+  color: #555;
+}
+
+.work-duration {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #888;
+}
+
+.work-points {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.work-points li {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Mobile navbar adjustments */
+@media only screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .nav-buttons {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

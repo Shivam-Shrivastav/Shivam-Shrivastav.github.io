@@ -17,12 +17,33 @@
   <body>
     <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="./index.html">
-        <span class="nav-title">Shivam.</span>
-      </a>
-      <a class="button" href="mailto:shivamshrivastava1021@gmail.com">
-        <span class="button-text">Contact Me</span>
-      </a>
+      <div class="nav-left">
+        <a class="nav-title-link" href="./index.html">
+          <span class="nav-title">Shivam Shrivastava</span>
+        </a>
+        <div class="nav-socials">
+          <a class="icon-link" target="_blank" href="https://github.com/Shivam-Shrivastav">
+            <image src="./assets/icons/github.svg" class="footer-icon"/>
+          </a>
+          <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/shivam-shrivastava-/">
+            <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
+          </a>
+          <a class="icon-link" target="_blank" href="https://twitter.com/ShivamsTwt">
+            <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+          </a>
+          <a class="icon-link" href="mailto:shivamshrivastava1021@gmail.com">
+            <image src="./assets/icons/mail.svg" class="footer-icon"/>
+          </a>
+        </div>
+      </div>
+      <div class="nav-buttons">
+        <a class="button" href="mailto:shivamshrivastava1021@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+        <a class="button" target="_blank" href="https://drive.google.com/file/d/1jWcnqMZsRA3XfzOC5OtSxvDeaqCyCs6V/view?usp=sharing">
+          <span class="button-text">Resume</span>
+        </a>
+      </div>
     </div>
 
     <!-- MAIN PAGE CONTENT -->
@@ -40,7 +61,7 @@
         <div id="portfolio-header-text-container">
           <div class="header-text">
             <span class="main-title">Hey, I'm Shivam.</span>
-            <div class="body-text">I build end-to-end AI systems — from transformer architectures and agentic reasoning to production observability dashboards. I love turning complex ML workflows into clean, deployed products.</div>
+            <div class="body-text">I'm an AI/ML Engineer with 3+ years of experience building and deploying intelligent systems — from transformer architectures and agentic reasoning to production observability dashboards. I love turning complex ML workflows into clean, shipped products.</div>
           </div>
           <a class="button" id="my-work-link">
             <span class="button-text">Check out my projects</span>
@@ -55,6 +76,23 @@
         <div class="about-section-content">
           <div class="body-text">I'm a Full Stack ML Engineer based in Bangalore, India. I design and ship systems that combine modern machine learning with robust backend infrastructure — whether that's a from-scratch Transformer, a recursive LLM research scaffold, or a full observability platform for AI agents.</div>
           <div class="body-text">Currently focused on agentic AI, LLM observability, and production-ready MLOps. Previously worked across data pipelines, vendor integrations, NLP classification, and computer-vision OCR systems.</div>
+        </div>
+      </div>
+
+      <!-- WORK EXPERIENCE SECTION -->
+      <div id="work-experience-section">
+        <span class="subheader-text">Work Experience</span>
+        <div class="work-experience-content">
+          <div class="work-item">
+            <div class="work-role">Data Scientist - I, AI Quality &amp; Risk Management (AIQRM)</div>
+            <div class="work-org">EY — Agent Operations &amp; Evaluation, Bengaluru</div>
+            <div class="work-duration">Sept 2025 – Present</div>
+            <ul class="work-points">
+              <li>Deployed Langfuse observability across 10+ LLM agents, unifying tracing for prompts, tool calls, tokens, and costs; cut agent-debugging time by 35% and enabled real-time monitoring.</li>
+              <li>Built LLM-judge evaluation frameworks scoring decision quality, correctness, and guardrail coverage; automated regression suites caught 32% more reasoning defects pre-release vs. manual review.</li>
+              <li>Standardized eval gates and risk-based release criteria across agent teams; reduced production defects by 40% compared to the pre-evaluation-framework baseline.</li>
+            </ul>
+          </div>
         </div>
       </div>
 
