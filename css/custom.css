@@ -50,18 +50,33 @@
 .nav-left {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 14px;
 }
 
 .nav-socials {
   display: flex;
-  gap: 12px;
+  gap: 18px;
+}
+
+.nav-socials .icon-link {
+  display: inline-flex;
+}
+
+.nav-socials .footer-icon {
+  width: 22px;
+  height: 22px;
 }
 
 .nav-buttons {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* Minimal work-experience section */
@@ -74,7 +89,7 @@
 .work-experience-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0;
   padding: 24px;
   border: 3px solid #141414;
   border-radius: 4px;
@@ -84,7 +99,18 @@
 .work-item {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
+  padding: 18px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.work-item:first-child {
+  padding-top: 0;
+}
+
+.work-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .work-role {
@@ -94,9 +120,9 @@
 }
 
 .work-org {
-  font-size: 14px;
-  font-weight: 700;
-  color: #555;
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
 }
 
 .work-duration {
@@ -104,22 +130,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #888;
-}
-
-.work-points {
-  margin: 10px 0 0;
-  padding-left: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.work-points li {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #333;
+  color: #777;
 }
 
 /* Mobile navbar adjustments */
